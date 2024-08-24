@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flat Able - Premium Admin Template by Phoenixcoded</title>
+    <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 11]>
+    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Phoenixcoded" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="/Annotator/static/Annotator/images/favicon.ico" type="/Annotator/static/Annotator/image/x-icon">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="/Annotator/static/Annotator/css/style.css">
+    <style>
+		.nav-link {
+		color: #000000; /* Warna teks default */
+		text-decoration: none; /* Hilangkan garis bawah default */
+		padding: 10px 15px; /* Padding untuk tampilan */
+	}
+	.nav-link:hover {
+		color: #000000; /* Warna teks saat hover */
+	}
+	.nav-tabs .nav-link {
+		border: none;
+		background: no-repeat center bottom, center 100%;
+		background-size: 0 100%, 100% 100%;
+		transition: background 0.3s ease-out;
+		background-image: linear-gradient(to top, #074287 2px, rgba(255, 255, 255, 0) 2px);
+	}
+	.nav-link {
+		color: #000000; /* Warna teks default */
+		text-decoration: none; /* Hilangkan garis bawah default */
+		padding: 10px 15px; /* Padding untuk tampilan */
+		}
+		.nav-link:hover {
+			color: #000000; /* Warna teks saat hover */
+		}
+		.nav-item-custom:hover:not(.no-hover) .nav-link {
+			background-color: #074287;
+			color: white;
+		}
+		.nav-tabs .nav-link {
+			border: none;
+			background: no-repeat center bottom, center 100%;
+			background-size: 0 100%, 100% 100%;
+			transition: background 0.3s ease-out;
+			background-image: linear-gradient(to top, #074287 2px, rgba(255, 255, 255, 0) 2px);
+		}
+		.pcoded-navbar .pcoded-inner-navbar > li.active > a, .pcoded-navbar .pcoded-inner-navbar > li.pcoded-trigger > a {
+			background: #074287;
+			color: #fff;
+		}
+	</style>
+    
+
+</head>
+<body class="" style="background-color: #ffffff;">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ navigation menu ] start -->
+	<nav class="pcoded-navbar  ">
+		<div class="navbar-wrapper  ">
+			<div class="navbar-content scroll-div " >
+				
+				<div class="">
+					<div class="main-menu-header">
+						<img class="img-radius" src="/Annotator/static/Annotator/images/user/avatar-2.jpg" alt="User-Profile-Image">
+						<div class="user-details">
+							<span>John Doe</span>
+							<div id="more-details">UX Designer<i class="fa fa-chevron-down m-l-5"></i></div>
+						</div>
+					</div>
+					<div class="collapse" id="nav-user-link">
+						<ul class="list-unstyled">
+							<li class="list-group-item"><a href="user-profile.html"><i class="feather icon-user m-r-5"></i>View Profile</a></li>
+							<li class="list-group-item"><a href="#!"><i class="feather icon-settings m-r-5"></i>Settings</a></li>
+							<li class="list-group-item"><a href="auth-normal-sign-in.html"><i class="feather icon-log-out m-r-5"></i>Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<ul class="nav pcoded-inner-navbar ">
+					<li class="nav-item pcoded-menu-caption">
+						<!-- <label>Navigation</label> -->
+					</li>
+					<li class="nav-item active">
+					    <a href="job" class="nav-link "><span class="pcoded-micon"><i class="feather icon-edit"></i></span><span class="pcoded-mtext">Annotate</span></a>
+					</li>
+                    <li class="nav-item nav-item-custom">
+					    <a href="notification" class="nav-link "><span class="pcoded-micon"><i class="feather icon-bell"></i></span><span class="pcoded-mtext">Notifications</span></a>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+	<!-- [ Header ] start -->
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light header-dark">
+		
+			
+				<div class="m-header">
+					<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+					<a href="#!" class="b-brand">
+						<!-- ========   change your logo hear   ============ -->
+						<img src="/Annotator/static/Annotator/images/logo.png" alt="" class="logo">
+						<img src="/Annotator/static/Annotator/images/logo-icon.png" alt="" class="logo-thumb">
+					</a>
+					<a href="#!" class="mob-toggler">
+						<i class="feather icon-more-vertical"></i>
+					</a>
+				</div>
+				
+				
+			
+	</header>
+	<!-- [ Header ] end -->
+	
+	
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h3 class="m-b-10">Job</h3>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#!">Job</a></li>
+                            <li class="breadcrumb-item"><a href="#!">Job_anotasi image perkotaan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+		<ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link" id="home-tab" href="data-image" role="tab" aria-controls="home" aria-selected="true">Data Image</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="profile-tab" href='issues' role="tab" aria-controls="profile" aria-selected="false">Issues</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" id="contact-tab" href="overview" role="tab" aria-controls="contact" aria-selected="false">Overview</a>
+			</li>
+		</ul>
+		
+        <!-- <div class="container"> -->
+			<div class="row">
+				<div class="col-md-2 col-sm-12 sidebar-nav">
+				
+					<div class="example-container">
+                        <div class="example-row">
+                            <div class="example-content-main"><b>Description</b></div>
+                            <div class="example-content-secondary" style="font-size: 14px;">No description</div>
+                        </div>
+                    </div>
+                    
+                    <div class="example-container" style="padding-top: 20px;">
+                        <div class="example-row">
+                            <div class="example-content-main"><b>Data</b></div>
+                            <div class="example-content-secondary" style="font-size: 14px;">300 data rows</div>
+                        </div>
+                    </div>
+
+                    <div class="example-container" style="padding-top: 20px;">
+                        <div class="example-row">
+                            <div class="example-content-main"><b>Classes</b></div>
+                            <div class="example-content-secondary" style="font-size: 14px;">15 classes</div>
+                        </div>
+                    </div>
+				</div>
+				<div class="col-md-9 col-sm-12 content">
+                    <div class="example-container">
+                        <div class="example-row">
+                            <div class="example-content-main"><h5>Labeling progress</h5></div>
+                            
+                        </div>
+                    </div>
+                    <button 
+                        type="button" 
+                        class="btn btn-outline-light btn-lg" 
+                        style="font-size: 25px; padding: 50px 70px; width: 220px; height: 150px; line-height: 0.8; text-align: center; color: #0F84D0; border-color: #D9D9D9; border-radius: 7px; margin-right: 20px;" 
+                        onmouseover="this.style.color='#0F84D0'; this.style.backgroundColor='#D9D9D9'; this.style.borderColor='#D9D9D9';" 
+                        onmouseout="this.style.color='#0F84D0'; this.style.backgroundColor='transparent'; this.style.borderColor='#D9D9D9';">
+                        38<br><span style="font-size: 14px; color: #000000;">Unannotated</span>
+                    </button>
+                    <button 
+                        type="button" 
+                        class="btn btn-outline-light btn-lg" 
+                        style="font-size: 25px; padding: 50px 70px; width: 220px; height: 150px; line-height: 0.8; text-align: center; color: #0F84D0; border-color: #D9D9D9; border-radius: 7px; margin-right: 20px;" 
+                        onmouseover="this.style.color='#0F84D0'; this.style.backgroundColor='#D9D9D9'; this.style.borderColor='#D9D9D9';" 
+                        onmouseout="this.style.color='#0F84D0'; this.style.backgroundColor='transparent'; this.style.borderColor='#D9D9D9';">
+                        38<br><span style="font-size: 14px; color: #000000;">In Review</span>
+                    </button>
+                    <button 
+                        type="button" 
+                        class="btn btn-outline-light btn-lg" 
+                        style="font-size: 25px; padding: 50px 70px; width: 220px; height: 150px; line-height: 0.8; text-align: center; color: #0F84D0; border-color: #D9D9D9; border-radius: 7px; margin-right: 20px;" 
+                        onmouseover="this.style.color='#0F84D0'; this.style.backgroundColor='#D9D9D9'; this.style.borderColor='#D9D9D9';" 
+                        onmouseout="this.style.color='#0F84D0'; this.style.backgroundColor='transparent'; this.style.borderColor='#D9D9D9';">
+                        38<br><span style="font-size: 14px; color: #000000;">In Rework</span>
+                    </button>
+                    <button 
+                        type="button" 
+                        class="btn btn-outline-light btn-lg" 
+                        style="font-size: 25px; padding: 50px 70px; width: 220px; height: 150px; line-height: 0.8; text-align: center; color: #0F84D0; border-color: #D9D9D9; border-radius: 7px; margin-right: 20px;" 
+                        onmouseover="this.style.color='#0F84D0'; this.style.backgroundColor='#D9D9D9'; this.style.borderColor='#D9D9D9';" 
+                        onmouseout="this.style.color='#0F84D0'; this.style.backgroundColor='transparent'; this.style.borderColor='#D9D9D9';">
+                        38<br><span style="font-size: 14px; color: #000000;">Finished</span>
+                    </button>
+                    <button 
+                        type="button" 
+                        class="btn btn-outline-light btn-lg" 
+                        style="font-size: 25px; padding: 50px 70px; width: 220px; height: 150px; line-height: 0.8; text-align: center; color: #0F84D0; border-color: #D9D9D9; border-radius: 7px;" 
+                        onmouseover="this.style.color='#0F84D0'; this.style.backgroundColor='#D9D9D9'; this.style.borderColor='#D9D9D9';" 
+                        onmouseout="this.style.color='#0F84D0'; this.style.backgroundColor='transparent'; this.style.borderColor='#D9D9D9';">
+                        38<br><span style="font-size: 14px; color: #000000;">Issues</span>
+                    </button>
+                    <div class="example-container" style="padding-top: 20px;">
+                        <div class="example-row">
+                            <div class="example-content-main"><h5>Labeling task</h5></div>
+                            
+                        </div>
+                        <div class="container" style="background-color: #ffffff; padding: 15px; border: 1px solid #ccc; border-radius: 8px;">
+                            <div class="container" style="background-color: #ffffff; padding: 15px; border: 1px solid #ccc; border-radius: 7px; margin-bottom: 20px; font-size: 15px;">
+                                    <div class="col" style="display: flex; justify-content: space-between; align-items: center;">
+                                        <b>Labeling task (295)</b>
+                                        <button 
+                                        type="button" 
+                                        class="btn" 
+                                        onmouseover="this.style.color='#118DFF'; this.style.backgroundColor='#D9D9D9'; this.style.borderColor='transparent';" 
+                                        onmouseout="this.style.color='#118DFF'; this.style.backgroundColor='transparent'; this.style.borderColor='transparent';"
+                                        style="color: #118DFF; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px;">View
+                                        </button>
+                                    </div>
+                                    </div>
+                                <div class="container" style="background-color: #ffffff; padding: 15px; border: 1px solid #ccc; border-radius: 7px; font-size: 15px;" >
+                                    <div class="col" style="display: flex; justify-content: space-between; align-items: center;">
+                                        <b>Rework (0)</b>
+                                        <button 
+                                        type="button" 
+                                        class="btn" 
+                                        onmouseover="this.style.color='#118DFF'; this.style.backgroundColor='#D9D9D9'; this.style.borderColor='transparent';" 
+                                        onmouseout="this.style.color='#118DFF'; this.style.backgroundColor='transparent'; this.style.borderColor='transparent';"
+                                        style="color: #118DFF; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px;">View
+                                        </button>
+                                      </div>
+                                    </div>
+                        </div>
+                    
+                    </div>
+
+					
+				</div>
+				
+			</div>
+			
+		</div>
+        
+        <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- table card-1 start -->
+            
+            <!-- table card-1 end -->
+            <!-- table card-2 start -->
+            
+            <!-- table card-2 end -->
+            <!-- Widget primary-success card start -->
+            
+            <!-- Widget primary-success card end -->
+
+            <!-- prject ,team member start -->
+             
+            
+            
+            
+            <!-- prject ,team member start -->
+            <!-- seo start -->
+            
+            
+           
+            <!-- seo end -->
+
+            <!-- Latest Customers start -->
+            
+            
+            <!-- Latest Customers end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+    <!-- Warning Section start -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 11]>
+        <div class="ie-warning">
+            <h1>Warning!!</h1>
+            <p>You are using an outdated version of Internet Explorer, please upgrade
+               <br/>to any of the following web browsers to access this website.
+            </p>
+            <div class="iew-container">
+                <ul class="iew-download">
+                    <li>
+                        <a href="http://www.google.com/chrome/">
+                            <img src="/Annotator/static/Annotator/images/browser/chrome.png" alt="Chrome">
+                            <div>Chrome</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/en-US/firefox/new/">
+                            <img src="/Annotator/static/Annotator/images/browser/firefox.png" alt="Firefox">
+                            <div>Firefox</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.opera.com">
+                            <img src="/Annotator/static/Annotator/images/browser/opera.png" alt="Opera">
+                            <div>Opera</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/safari/">
+                            <img src="/Annotator/static/Annotator/images/browser/safari.png" alt="Safari">
+                            <div>Safari</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="/Annotator/static/Annotator/images/browser/ie.png" alt="">
+                            <div>IE (11 & above)</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>Sorry for the inconvenience!</p>
+        </div>
+    <![endif]-->
+    <!-- Warning Section Ends -->
+
+    <!-- Required Js -->
+    <script src="/Annotator/static/Annotator/js/vendor-all.min.js"></script>
+    <script src="/Annotator/static/Annotator/js/plugins/bootstrap.min.js"></script>
+    <script src="/Annotator/static/Annotator/js/pcoded.min.js"></script>
+
+<!-- Apex Chart -->
+<script src="/Annotator/static/Annotator/js/plugins/apexcharts.min.js"></script>
+
+
+<!-- custom-chart js -->
+<script src="/Annotator/static/Annotator/js/pages/dashboard-main.js"></script>
+</body>
+
+</html>

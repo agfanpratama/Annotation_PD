@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IFuAnnotate</title>
+    <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 11]>
+    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Phoenixcoded" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="/Annotator/static/Annotator/images/favicon.ico" type="/Annotator/static/Annotator/image/x-icon">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="/Annotator/static/Annotator/css/style.css">
+    
+	<style>
+        .nav-item {
+          display: inline-block;
+          margin-right: 0px;
+        }
+        .nav-item a {
+          text-decoration: none;
+          color: #ffffff; /* Default link color */
+          padding: 10px 15px;
+          transition: color 0.3s, background-color 0.3s; /* Smooth transition for color changes */
+        }
+        .nav-item.active a {
+          color: #fff; /* Text color when active */
+          background-color: #007bff; /* Background color when active */
+          border-radius: 0px; /* Optional: Rounded corners */
+        }
+        .nav-item.active a .feather {
+          color: #fff; /* Icon color when active */
+        }
+        .pcoded-navbar .pcoded-inner-navbar > li.active > a, .pcoded-navbar .pcoded-inner-navbar > li.pcoded-trigger > a {
+        background: #074287;
+        color: #fff;
+        }
+		.nav-item:hover:not(.no-hover) .nav-link {
+        background-color: #074287;
+        color: white;
+        }
+
+        /* Menghapus efek hover dari no-hover */
+        .no-hover .nav-link {
+        background-color: initial; /* Kembali ke warna awal */
+        color: initial; /* Kembali ke warna awal */
+        box-shadow: none; /* Menghapus bayangan */
+        }
+		/* Gaya default untuk baris tabel */
+		.table-hover tbody tr {
+			transition: all 0.3s ease; /* Transisi halus untuk perubahan */
+		}
+
+		/* Gaya ketika baris tabel di-hover */
+		.table-hover tbody tr:hover {
+			background-color: #e3e9f0; /* Ubah warna latar belakang */
+			cursor: pointer; /* Ubah kursor menjadi pointer */
+		}
+		
+      </style>
+    
+
+</head>
+<body class="" style="background-color: #ffffff;">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ navigation menu ] start -->
+	<nav class="pcoded-navbar  ">
+		<div class="navbar-wrapper  ">
+			<div class="navbar-content scroll-div " >
+				
+				<div class="">
+					<div class="main-menu-header">
+						<img class="img-radius" src="/Annotator/static/Annotator/images/user/avatar-2.jpg" alt="User-Profile-Image">
+						<div class="user-details">
+							<span>John Doe</span>
+							<div id="more-details">UX Designer<i class="fa fa-chevron-down m-l-5"></i></div>
+						</div>
+					</div>
+					<div class="collapse" id="nav-user-link">
+						<ul class="list-unstyled">
+							<li class="list-group-item"><a href="user-profile.html"><i class="feather icon-user m-r-5"></i>View Profile</a></li>
+							<li class="list-group-item"><a href="#!"><i class="feather icon-settings m-r-5"></i>Settings</a></li>
+							<li class="list-group-item"><a href="auth-normal-sign-in.html"><i class="feather icon-log-out m-r-5"></i>Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<ul class="nav pcoded-inner-navbar ">
+					<li class="nav-item pcoded-menu-caption">
+						<!-- <label>Navigation</label> -->
+					</li>
+					<li class="nav-item">
+					    <a href="job" class="nav-link "><span class="pcoded-micon"><i class="feather icon-edit"></i></span><span class="pcoded-mtext">Annotate</span></a>
+					</li>
+                    <li class="nav-item active">
+					    <a href="notification" class="nav-link "><span class="pcoded-micon"><i class="feather icon-bell"></i></span><span class="pcoded-mtext">Notifications</span></a>
+					</li>
+					
+					
+				
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+	<!-- [ Header ] start -->
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light header-dark">
+		
+			
+				<div class="m-header">
+					<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+					<a href="#!" class="b-brand">
+						<!-- ========   change your logo hear   ============ -->
+						<img src="/Annotator/static/Annotator/images/logo.png" alt="" class="logo">
+						<img src="/Annotator/static/Annotator/images/logo-icon.png" alt="" class="logo-thumb">
+					</a>
+					<a href="#!" class="mob-toggler">
+						<i class="feather icon-more-vertical"></i>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<!-- <ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a href="#!" class="pop-search"><i class="feather icon-search"></i></a>
+							<div class="search-bar">
+								<input type="text" class="form-control border-0 shadow-none" placeholder="Search hear">
+								<button type="button" class="close" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+						</li>
+						
+						
+					</ul> -->
+					
+				</div>
+				
+			
+	</header>
+	<!-- [ Header ] end -->
+	
+	
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h3 class="m-b-10">Notifications</h3>
+                        </div>
+                        <!-- <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#!">Job</a></li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- table card-1 start -->
+            
+            <!-- table card-1 end -->
+            <!-- table card-2 start -->
+            
+            <!-- table card-2 end -->
+            <!-- Widget primary-success card start -->
+            
+            <!-- Widget primary-success card end -->
+
+            <!-- prject ,team member start -->
+             
+            <div class="col-xl-12 col-md-12">
+                
+                <div class="card table-card" style="border-top: 3px solid #074287;">
+                    <div class="card-header" style="border: 1px solid #ddd;">
+                        <h5></h5>
+                        <div class="card-header-right">
+                            <div class="btn-group card-option">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="feather icon-more-horizontal"></i>
+                                </button>
+                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                    <li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
+                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
+                                    <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive" style="border: 1px solid #ddd;">
+                            <table class="table table-hover mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            
+                                            </div>
+                                            Task ID
+                                        </th>
+                                        <th>Task name</th>
+                                        <th>Time</th>
+                                        <th>By</th>
+                                        
+                                        <th class="text-right">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr onclick="window.location.href='data_image.html'">
+                                        
+                                        <td>123345837q182</td>
+                                        <td>Annotate project: Job_anotasi image perkotaan</td>
+                                        <td>30 minutes ago</td>
+                                        <td>Admin</td>
+                                        <td class="text-right"><label class="badge badge-light-success">Accepted</label></td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td>123940932</td>
+                                        <td>Annotate project: Job_anotasi image kucing</td>
+                                        <td>30 minutes ago</td>
+                                        <td>Admin</td>
+                                        <td class="text-right"><label class="badge badge-light-success">Accepted</label></td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td>123940932</td>
+                                        <td>Annotate project: Job_anotasi image kendaraan</td>
+                                        <td>30 minutes ago</td>
+                                        <td>Admin</td>
+                                        <td class="text-right"><label class="badge badge-light-success">Accepted</label></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- prject ,team member start -->
+            <!-- seo start -->
+            
+            
+           
+            <!-- seo end -->
+
+            <!-- Latest Customers start -->
+            
+            
+            <!-- Latest Customers end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+    <!-- Warning Section start -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 11]>
+        <div class="ie-warning">
+            <h1>Warning!!</h1>
+            <p>You are using an outdated version of Internet Explorer, please upgrade
+               <br/>to any of the following web browsers to access this website.
+            </p>
+            <div class="iew-container">
+                <ul class="iew-download">
+                    <li>
+                        <a href="http://www.google.com/chrome/">
+                            <img src="assets/images/browser/chrome.png" alt="Chrome">
+                            <div>Chrome</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/en-US/firefox/new/">
+                            <img src="assets/images/browser/firefox.png" alt="Firefox">
+                            <div>Firefox</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.opera.com">
+                            <img src="assets/images/browser/opera.png" alt="Opera">
+                            <div>Opera</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/safari/">
+                            <img src="assets/images/browser/safari.png" alt="Safari">
+                            <div>Safari</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="assets/images/browser/ie.png" alt="">
+                            <div>IE (11 & above)</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>Sorry for the inconvenience!</p>
+        </div>
+    <![endif]-->
+    <!-- Warning Section Ends -->
+
+    <!-- Required Js -->
+    <script src="/Annotator/static/Annotator/js/vendor-all.min.js"></script>
+    <script src="/Annotator/static/Annotator/js/plugins/bootstrap.min.js"></script>
+    <script src="/Annotator/static/Annotator/js/pcoded.min.js"></script>
+
+<!-- Apex Chart -->
+<script src="/Annotator/static/Annotator/js/plugins/apexcharts.min.js"></script>
+
+
+<!-- custom-chart js -->
+<script src="/Annotator/static/Annotator/js/pages/dashboard-main.js"></script>
+</body>
+
+</html>
